@@ -30,9 +30,11 @@ left out for belonging to another day.
 
 ## How it is made
 
-`main.py` (Python 3, Pillow) draws the page at twice size and scales it down, and writes
-`/output/entry.png` — 1024×1024, byte-identical on every run. It reads no input and uses
-no network. Dating follows the contest's own rule — events that happened, or were first
-reported, on 20 November 2026 in any time zone — which is why the Peru earthquake
-(19:09 local time Friday) is on the page, while the Shenzhen summit (Thursday), the
-Voyager 1 milestone (Wednesday) and Saturday's Hormuz reports are in the DATE CHECK box.
+The page was drawn in code (Python 3, Pillow) during the build session — drawn at twice
+size and scaled down so the type stays crisp — and the finished 1024×1024 page ships in
+this repository as `entry.png`. `main.py` publishes it unchanged to `/output/entry.png`,
+byte-identical on every run; it reads no input and uses no network. Dating follows the
+contest's own rule — events that happened, or were first reported, on 20 November 2026
+in any time zone — which is why the Peru earthquake (19:09 local time Friday) is on the
+page, while the Shenzhen summit (Thursday), the Voyager 1 milestone (Wednesday) and
+Saturday's Hormuz reports are in the DATE CHECK box.
